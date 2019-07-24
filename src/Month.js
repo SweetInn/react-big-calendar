@@ -10,10 +10,10 @@ import { navigate, views } from './utils/constants'
 import { notify } from './utils/helpers'
 import getPosition from 'dom-helpers/query/position'
 import raf from 'dom-helpers/util/requestAnimationFrame'
-import createRef from 'create-react-ref/lib/createRef';
+import createRef from 'create-react-ref/lib/createRef'
 
 import Popup from './Popup'
-import Overlay from 'react-overlays/Overlay'
+import { Overlay } from 'react-overlays'
 import DateContentRow from './DateContentRow'
 import Header from './Header'
 import DateHeader from './DateHeader'

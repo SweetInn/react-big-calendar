@@ -1,6 +1,6 @@
 {
   "name": "react-big-calendar-sweet",
-  "version": "0.22.0",
+  "version": "0.22.1",
   "description": "Calendar! with events",
   "author": "Jason Quense <monastic.panic@gmail.com>",
   "repository": "intljusticemission/react-big-calendar",
@@ -131,7 +131,7 @@
     "lodash-es": "^4.17.11",
     "memoize-one": "^4.0.3",
     "prop-types": "^15.6.2",
-    "react-overlays": "^1.2.0",
+    "react-overlays": "^0.8.3",
     "uncontrollable": "^6.2.3",
     "warning": "^4.0.2"
   },
