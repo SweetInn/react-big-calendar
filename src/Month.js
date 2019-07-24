@@ -10,6 +10,7 @@ import { navigate, views } from './utils/constants'
 import { notify } from './utils/helpers'
 import getPosition from 'dom-helpers/query/position'
 import raf from 'dom-helpers/util/requestAnimationFrame'
+import createRef from 'create-react-ref/lib/createRef';
 
 import Popup from './Popup'
 import Overlay from 'react-overlays/Overlay'
@@ -28,7 +29,7 @@ class MonthView extends React.Component {
 
     this._bgRows = []
     this._pendingSelection = []
-    this.slotRowRef = React.createRef()
+    this.slotRowRef = createRef()
     this.state = {
       rowLimit: 5,
       needLimitMeasure: true,

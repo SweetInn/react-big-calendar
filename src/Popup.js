@@ -7,6 +7,7 @@ import * as dates from './utils/dates'
 
 import EventCell from './EventCell'
 import { isSelected } from './utils/selection'
+import forwardRef from 'create-react-ref/lib/forwardRef'
 
 class Popup extends React.Component {
   componentDidMount() {
@@ -111,6 +112,4 @@ Popup.propTypes = {
  * The Overlay component, of react-overlays, creates a ref that is passed to the Popup, and
  * requires proper ref forwarding to be used without error
  */
-export default React.forwardRef((props, ref) => (
-  <Popup popperRef={ref} {...props} />
-))
+export default forwardRef((props, ref) => <Popup popperRef={ref} {...props} />)

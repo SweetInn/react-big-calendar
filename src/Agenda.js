@@ -3,6 +3,7 @@ import React from 'react'
 import classes from 'dom-helpers/class'
 import getWidth from 'dom-helpers/query/width'
 import scrollbarSize from 'dom-helpers/util/scrollbarSize'
+import createRef from 'create-react-ref/lib/createRef'
 
 import * as dates from './utils/dates'
 import { navigate } from './utils/constants'
@@ -12,11 +13,11 @@ import { isSelected } from './utils/selection'
 class Agenda extends React.Component {
   constructor(props) {
     super(props)
-    this.headerRef = React.createRef()
-    this.dateColRef = React.createRef()
-    this.timeColRef = React.createRef()
-    this.contentRef = React.createRef()
-    this.tbodyRef = React.createRef()
+    this.headerRef = createRef()
+    this.dateColRef = createRef()
+    this.timeColRef = createRef()
+    this.contentRef = createRef()
+    this.tbodyRef = createRef()
   }
 
   componentDidMount() {

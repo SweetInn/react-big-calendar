@@ -63,8 +63,8 @@
     "bracketSpacing": true
   },
   "peerDependencies": {
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1"
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   },
   "devDependencies": {
     "@4c/rollout": "^1.2.0",
@@ -123,6 +123,7 @@
   "dependencies": {
     "@babel/runtime": "^7.1.5",
     "classnames": "^2.2.6",
+    "create-react-ref": "^0.1.0",
     "date-arithmetic": "^4.0.1",
     "dom-helpers": "^3.4.0",
     "invariant": "^2.2.4",

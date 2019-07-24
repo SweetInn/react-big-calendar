@@ -4,6 +4,7 @@ import raf from 'dom-helpers/util/requestAnimationFrame'
 import React, { Component } from 'react'
 import { findDOMNode } from 'react-dom'
 import memoize from 'memoize-one'
+import createRef from 'create-react-ref/lib/createRef';
 
 import * as dates from './utils/dates'
 import DayColumn from './DayColumn'
@@ -21,8 +22,8 @@ export default class TimeGrid extends Component {
 
     this.state = { gutterWidth: undefined, isOverflowing: null }
 
-    this.scrollRef = React.createRef()
-    this.contentRef = React.createRef()
+    this.scrollRef = createRef()
+    this.contentRef = createRef()
   }
 
   componentWillMount() {
